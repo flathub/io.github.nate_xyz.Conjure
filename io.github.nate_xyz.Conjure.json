@@ -44,7 +44,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/nate-xyz/conjure",
-                    "commit":"62ee323c90b9eedb36b728839c135ddc9e18ffd1"
+                    "commit":"1bb43d2330fa2834727a647fff186030ee06c6a8"
                 }
             ]
         }
