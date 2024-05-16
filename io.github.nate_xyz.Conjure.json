@@ -1,7 +1,7 @@
 {
     "app-id" : "io.github.nate_xyz.Conjure",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "conjure",
     "finish-args" : [
@@ -30,9 +30,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/ImageMagick/ImageMagick.git",
-                    "commit": "32ce406898b6f9992103cc0ee353f31a0e83f063"
+                    "type": "archive",
+                    "url": "https://imagemagick.org/archive/releases/ImageMagick-7.1.1-32.tar.gz",
+                    "sha256": "c97e957f1eb6642669e535d6917599dc417c2f4ffcb4323f313d05dd40dc0ca4"
                 }
             ]
         },
@@ -44,7 +44,12 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/nate-xyz/conjure",
+                    "tag": "v0.1.2",
                     "commit":"bdbea03359109be6ebe0bea9fa5678c4ce541987"
+                },
+                {
+                    "type" : "patch",
+                    "path":"fix_appdata.patch"
                 }
             ]
         }

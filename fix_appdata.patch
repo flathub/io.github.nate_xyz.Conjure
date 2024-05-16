@@ -1,0 +1,44 @@
+diff --git a/data/io.github.nate_xyz.Conjure.appdata.xml.in b/data/io.github.nate_xyz.Conjure.appdata.xml.in
+index e562cc0..d658f6e 100644
+--- a/data/io.github.nate_xyz.Conjure.appdata.xml.in
++++ b/data/io.github.nate_xyz.Conjure.appdata.xml.in
+@@ -16,6 +16,8 @@
+   <url type="homepage">https://github.com/nate-xyz/conjure</url>
+   <url type="bugtracker">https://github.com/nate-xyz/conjure/issues</url>
+   <url type="donation">https://ko-fi.com/natexyz</url>
++  <url type="vcs-browser">https://github.com/nate-xyz/conjure</url>
++  <url type="translate">https://github.com/nate-xyz/conjure/tree/main/po</url>
+ 
+ 	<releases>
+     <release version="0.1.2" date="2023-04-02">
+@@ -46,13 +48,8 @@
+   </custom>
+   <content_rating type="oars-1.1"/>
+ 
+-	<categories>
+-    <category>Graphics</category>
+-    <category>ImageProcessing</category>
+-  </categories>
+-
+ 	<screenshots>
+-    <screenshot>
++    <screenshot type="default">
+       <image>https://raw.githubusercontent.com/nate-xyz/conjure/main/data/screenshots/conjure-0.png</image>
+     </screenshot>
+     <screenshot>
+diff --git a/data/io.github.nate_xyz.Conjure.desktop.in b/data/io.github.nate_xyz.Conjure.desktop.in
+index 7a81ee9..ec7f906 100644
+--- a/data/io.github.nate_xyz.Conjure.desktop.in
++++ b/data/io.github.nate_xyz.Conjure.desktop.in
+@@ -6,7 +6,7 @@ Exec=conjure
+ Icon=io.github.nate_xyz.Conjure
+ Terminal=false
+ Type=Application
+-Categories=GNOME;GTK;Graphics
++Categories=Graphics;ImageProcessing
+ StartupNotify=true
+ # Translators: Search terms to find this application. Do not translate or localize the semicolons! The list must also end with a semicolon.
+ Keywords=image;magic;transform;
+\ No newline at end of file
+--
+libgit2 1.7.2
